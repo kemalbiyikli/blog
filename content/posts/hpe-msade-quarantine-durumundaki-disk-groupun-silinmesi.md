@@ -1,6 +1,6 @@
 ---
 title: "HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi"
-date: "2026-08-19T00:00:00+03:00"
+date: "2026-08-19T00:00:00"
 slug: "hpe-msade-quarantine-durumundaki-disk-groupun-silinmesi"
 draft: true
 ---
