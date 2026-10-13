@@ -3,7 +3,7 @@ title: "Ubuntu Server Üzerinde Redis Cluster Kurulumu"
 date: "2025-03-02T01:29:01"
 lastmod: "2025-03-02T01:36:31"
 slug: "ubuntu-server-uzerinde-redis-cluster-kurulumu"
-categories: ["Linux"]
+tags: ["Linux", "Ubuntu", "Redis"]
 draft: false
 ---
 ### **Redis Nedir?**

@@ -3,8 +3,7 @@ title: "VMware ESXi CLI Upgrade 7.0>8.0"
 date: "2023-12-01T22:29:14"
 lastmod: "2023-12-26T02:01:41"
 slug: "esxi-cli-upgrade"
-categories: ["vSphere"]
-tags: ["CLI", "ESXi", "Upgrade", "vSphere"]
+tags: ["VMware", "ESXi", "Upgrade", "CLI"]
 draft: false
 ---
 ESXi upgrade işlemi birden fazla yöntemle yapılabilmektedir, bu yazımda cli üzerinden esxi upgrade işleminin nasıl yapılacağını aktaracağım.

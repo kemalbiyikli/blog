@@ -3,8 +3,7 @@ title: "VMware ESXi – Cannot Mount Existing iSCSI Datastore"
 date: "2025-06-25T00:43:49"
 lastmod: "2025-07-30T09:47:14"
 slug: "vmware-esxi-cannot-mount-existing-iscsi-datastore"
-categories: ["HPE", "Storage", "vSphere"]
-tags: ["HPE", "Storage", "vSphere"]
+tags: ["VMware", "ESXi", "Storage", "HPE MSA", "iSCSI", "Sorun Giderme"]
 draft: false
 ---
 Geçtiğimiz hafta sanallaştırma altyapımıza yeni bir sunucu ekledim. Her şey yolunda gidiyor derken MSA2060 üzerindeki bir Volume’ü sunucuya mount edemedim. Neden oldu, nasıl çözeriz derken aşağıdaki gibi bir süreç gelişti.

@@ -3,8 +3,7 @@ title: "vCenter Upgrade: Source vCenter has Duplicate Names in a Network Folder 
 date: "2023-12-23T00:38:09"
 lastmod: "2023-12-26T02:01:09"
 slug: "vcenter-upgrade-source-vcenter-has-duplicate-names-in-a-network-folder-hatasi"
-categories: ["vCenter", "vSphere"]
-tags: ["Upgrade", "vCenter"]
+tags: ["VMware", "vCenter", "Upgrade", "Sorun Giderme"]
 draft: false
 ---
 ![](/wp-content/uploads/2023/12/vcenter.jpg)

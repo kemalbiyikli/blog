@@ -3,8 +3,7 @@ title: "vCenter: Archive is full"
 date: "2025-07-28T17:48:27"
 lastmod: "2025-07-28T17:54:20"
 slug: "vcenter-archive-is-full"
-categories: ["vCenter", "vSphere"]
-tags: ["Broadcom", "vCenter", "VMware", "vSphere"]
+tags: ["VMware", "vCenter", "Sorun Giderme"]
 draft: false
 ---
 ------------------------------------------------------------------------

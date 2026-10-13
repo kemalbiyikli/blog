@@ -3,7 +3,7 @@ title: "Linux’da Dosya İzinlerinin Temel Yapısı"
 date: "2025-02-28T23:56:54"
 lastmod: "2025-02-28T23:56:55"
 slug: "linuxda-dosya-izinlerinin-temel-yapisi"
-categories: ["Linux"]
+tags: ["Linux"]
 draft: false
 ---
 Linux’ta dosya izinleri, dosyalara ve dizinlere kimlerin erişebileceğini ve bu erişimin nasıl olacağını belirler. Bu izinler, **owner, group ve others** için **read** **write** ve **execute** olmak üzere farklı kombinasyonlarla tanımlanabilir. Bu kombinasyonlar harflerle ya da rakamlarla yönetilebilmektedir. İlk bakışta karmaşık gibi görünse de oldukça basit ve anlaşılır bir düzen mevcuttur.

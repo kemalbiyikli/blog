@@ -3,7 +3,7 @@ title: "LVM ile Linux Sunucuda Disk Genişletme"
 date: "2025-02-28T23:22:52"
 lastmod: "2025-07-29T11:34:25"
 slug: "lvm-ile-linux-sunucuda-disk-genisletme"
-categories: ["Linux"]
+tags: ["Linux", "LVM", "Storage"]
 draft: false
 ---
 Linux sunucular, özellikle disk yönetimi söz konusu olduğunda oldukça esnek bir yapı sunar. Bu yapı karmaşık gibi görünse de aslında basit bir mantığın üzerine inşa edilmiştir. Linux sistemlerde yaygın bir şekilde kullanılan **LVM (Logical Volume Manager)** sayesinde, sunucunuzun disk alanını dinamik olarak yönetebilir ve ihtiyaç duyduğunuzda belirli bölümleri kolayca genişletebilirsiniz. Bu yazıda, **RedHat** tabanlı bir sunucuda `/home` dizinini **30GB** artırma işlemini adım adım anlatacağım.

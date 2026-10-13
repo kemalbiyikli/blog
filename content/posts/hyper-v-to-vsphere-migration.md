@@ -3,8 +3,7 @@ title: "Hyper-V to vSphere Migration"
 date: "2024-01-23T22:56:59"
 lastmod: "2024-01-23T23:11:53"
 slug: "hyper-v-to-vsphere-migration"
-categories: ["Veeam", "vSphere"]
-tags: ["convert", "Migration", "vCenter", "vSphere"]
+tags: ["VMware", "Hyper-V", "Veeam", "Migration"]
 draft: false
 ---
 Geçtiğimiz aylarda bir firmayı oldukça eski bir Hyper-V ortamından güncel bir VMware ortamına geçirmemiz gerekti. Bu işlemi en pürüzsüz şekilde nasıl yaparım diye araştırırken en başta aklıma vCenter Converter geldi. Kurulumunu yaptım ve çeşitli testler yaptım, adım adım hataları giderdim ancak ne olursa olsun bu işlem hayallerinizdeki gibi gerçekleşmiyor. Her zaman ufak tefek de olsa bir yerlerde sorun çıkıyor. Sunucunun UUID değiştiği için bazı servisler bozulabiliyor, güvenlikle ilgili Group Policy’lere takılabiliyor, network kartını tanımıyor, taşıyacağınız her sunucuda güvenlik yazılımlarını disable etmeniz gerekiyor, bu da sürecin uzamasına neden oluyor. Bu ve benzeri sorunlarla uğraştığınızda da bu sürecin istediğiniz gibi gerçekleşmeyeceğini anlıyorsunuz. Bu noktada alternatif çözümleri araştırdıktan sonra bu geçiş sürecinde veeam kullanmaya karar verdim.

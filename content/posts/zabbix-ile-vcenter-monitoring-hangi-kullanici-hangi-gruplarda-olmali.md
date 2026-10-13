@@ -2,6 +2,7 @@
 title: "Zabbix ile vCenter Monitoring: Hangi Kullanıcı Hangi Gruplarda Olmalı?"
 date: "2026-07-15T00:00:00"
 slug: "zabbix-ile-vcenter-monitoring-hangi-kullanici-hangi-gruplarda-olmali"
+tags: ["VMware", "vCenter", "Zabbix", "Monitoring"]
 draft: true
 ---
 Zabbix üzerinden bir vCenter ortamını izlerken kullanılan servis hesabına ne kadar yetki verileceği sık karışan bir konu. “Read-Only rol yeterli” diye başlıyoruz, sonra bazı item’lar sürekli hata veriyor, çaresizlikle Administrator veriyoruz ve her şey düzeliyor ki bu da izleme hesabı için gereğinden fazla yetki demek. Peki aslında ihtiyacımız olan yetkiler neler?

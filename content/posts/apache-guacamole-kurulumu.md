@@ -3,8 +3,7 @@ title: "Apache Guacamole Kurulumu"
 date: "2025-03-08T03:52:09"
 lastmod: "2025-03-08T16:45:31"
 slug: "apache-guacamole-kurulumu"
-categories: ["Linux"]
-tags: ["Guacamole"]
+tags: ["Linux", "Guacamole"]
 draft: false
 ---
 ### **Giriş**

@@ -3,8 +3,7 @@ title: "“Cannot increase disk size due to old replication participation” hat
 date: "2024-01-13T00:37:32"
 lastmod: "2024-02-03T02:30:59"
 slug: "cannot-increase-disk-size-due-to-old-replication-participation-hatasi-ve-cozumu"
-categories: ["vCenter", "vSphere"]
-tags: ["CLI", "ESXi", "vCenter", "vSphere"]
+tags: ["VMware", "vCenter", "ESXi", "Sorun Giderme"]
 draft: false
 ---
 VMware vSphere site to site replication’dan bir sunucuyu kaldırdığınızda ya da VSRM sunucusunu kaybettiğinizde ve replikasyonlarınız dağıldığında VM’leriniz olduğu gibi çalışacaktır. Ancak sunucularınızda disk artırmak istediğinizde **`Cannot increase disk size due to old replication participation `** hatası ile karşılaşmanız muhtemel.

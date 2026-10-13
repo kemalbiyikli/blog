@@ -3,8 +3,7 @@ title: "DELL EMC DD6300 Firmware Upgrade"
 date: "2024-01-02T19:29:36"
 lastmod: "2024-01-19T23:59:58"
 slug: "dell-emc-dd6300-firmware-upgrade"
-categories: ["DELL EMC"]
-tags: ["Backup", "DataDomain", "Dell", "Upgrade"]
+tags: ["Dell EMC", "Data Domain", "Backup", "Upgrade"]
 draft: false
 ---
 Bu yazımda **DELL EMC Data Domain 6300**‘ün firmware upgrade işleminden söz edeceğim.
