@@ -2,6 +2,7 @@ baseURL = "https://kemalbiyikli.com/"
 languageCode = "tr-TR"
 defaultContentLanguage = "tr"
 title = "Kemal Bıyıklı"
+timeZone = "Europe/Istanbul"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
