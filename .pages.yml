@@ -1,0 +1,29 @@
+media:
+  input: static/images
+  output: /images
+content:
+  - name: posts
+    label: Yazılar
+    type: collection
+    path: content/posts
+    filename: "{primary}.md"
+    view:
+      fields: [title, date, draft]
+      sort: [date]
+    fields:
+      - { name: title, label: Başlık, type: string, required: true }
+      - { name: date, label: Tarih, type: date, options: { time: true } }
+      - { name: draft, label: Taslak (yayınlanmasın), type: boolean, default: false }
+      - { name: categories, label: Kategoriler, type: string, list: true }
+      - { name: tags, label: Etiketler, type: string, list: true }
+      - { name: slug, label: URL adı (boş bırakılabilir), type: string }
+      - { name: body, label: İçerik, type: rich-text }
+  - name: pages
+    label: Sayfalar
+    type: collection
+    path: content
+    filename: "{primary}.md"
+    fields:
+      - { name: title, label: Başlık, type: string }
+      - { name: url, label: URL, type: string }
+      - { name: body, label: İçerik, type: rich-text }
