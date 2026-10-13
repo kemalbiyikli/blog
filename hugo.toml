@@ -14,7 +14,6 @@ enableEmoji = true
   posts = "/:slug/"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
 
 [outputs]
@@ -51,11 +50,7 @@ enableEmoji = true
   pageRef = "/archives"
   weight = 10
 [[menu.main]]
-  name = "Kategoriler"
-  pageRef = "/categories"
-  weight = 20
-[[menu.main]]
-  name = "Etiketler"
+  name = "Konular"
   pageRef = "/tags"
   weight = 30
 [[menu.main]]
