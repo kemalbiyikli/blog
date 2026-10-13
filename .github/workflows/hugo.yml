@@ -22,9 +22,7 @@ jobs:
           git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
       - id: pages
         uses: actions/configure-pages@v5
-      - run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-        env:
-          HUGO_CANONIFYURLS: "true"
+      - run: hugo --minify
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
