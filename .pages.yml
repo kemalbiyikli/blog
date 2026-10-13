@@ -6,7 +6,7 @@ content:
     label: Yazılar
     type: collection
     path: content/posts
-    filename: "{primary}.md"
+    filename: "{fields.slug}.md"
     view:
       fields: [title, date, draft]
       sort: [date]
@@ -21,7 +21,7 @@ content:
           multiple: true
           creatable: true
           values: [VMware, vCenter, ESXi, Storage, HPE MSA, iSCSI, Linux, Ubuntu, LVM, Redis, Guacamole, Veeam, Hyper-V, Migration, Dell EMC, Data Domain, Backup, Zabbix, Monitoring, Upgrade, CLI, Sorun Giderme]
-      - { name: slug, label: URL adı (boş bırakılabilir), type: string }
+      - { name: slug, label: "Kısa ad (URL ve dosya adı, örn: esxi-iscsi-mount)", type: string, required: true }
       - { name: body, label: İçerik, type: rich-text }
   - name: pages
     label: Sayfalar
