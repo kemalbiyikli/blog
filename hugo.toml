@@ -28,7 +28,6 @@ capitalizeListTitles = false
 
 [params]
   env = "production"
-  description = "Sanallaştırma, storage ve Linux üzerine notlar"
   author = "Kemal Bıyıklı"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -40,9 +39,6 @@ capitalizeListTitles = false
   ShowShareButtons = true
   ShareButtons = ["linkedin", "x", "whatsapp", "telegram"]
   displayFullLangName = true
-  [params.homeInfoParams]
-    Title = "Kemal Bıyıklı"
-    Content = "Sanallaştırma, storage ve Linux üzerine sahadan notlar."
   [params.fuseOpts]
     keys = ["title", "permalink", "summary", "content"]
 
