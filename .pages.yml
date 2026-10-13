@@ -14,8 +14,13 @@ content:
       - { name: title, label: Başlık, type: string, required: true }
       - { name: date, label: Tarih, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss" } }
       - { name: draft, label: Taslak (yayınlanmasın), type: boolean, default: false }
-      - { name: categories, label: Kategoriler, type: string, list: true }
-      - { name: tags, label: Etiketler, type: string, list: true }
+      - name: tags
+        label: Konular
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [VMware, vCenter, ESXi, Storage, HPE MSA, iSCSI, Linux, Ubuntu, LVM, Redis, Guacamole, Veeam, Hyper-V, Migration, Dell EMC, Data Domain, Backup, Zabbix, Monitoring, Upgrade, CLI, Sorun Giderme]
       - { name: slug, label: URL adı (boş bırakılabilir), type: string }
       - { name: body, label: İçerik, type: rich-text }
   - name: pages
