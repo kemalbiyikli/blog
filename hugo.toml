@@ -6,6 +6,7 @@ timeZone = "Europe/Istanbul"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
+capitalizeListTitles = false
 
 [pagination]
   pagerSize = 10
