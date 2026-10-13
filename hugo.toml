@@ -1,0 +1,67 @@
+baseURL = "https://kemalbiyikli.com/"
+languageCode = "tr-TR"
+defaultContentLanguage = "tr"
+title = "Kemal Bıyıklı"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[permalinks.page]
+  posts = "/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  style = "monokai"
+  lineNos = false
+
+[params]
+  env = "production"
+  description = "Sanallaştırma, storage ve Linux üzerine notlar"
+  author = "Kemal Bıyıklı"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShareButtons = ["linkedin", "x", "whatsapp", "telegram"]
+  displayFullLangName = true
+  [params.homeInfoParams]
+    Title = "Kemal Bıyıklı"
+    Content = "Sanallaştırma, storage ve Linux üzerine sahadan notlar."
+  [params.fuseOpts]
+    keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  name = "Arşiv"
+  url = "/archives/"
+  weight = 10
+[[menu.main]]
+  name = "Kategoriler"
+  url = "/categories/"
+  weight = 20
+[[menu.main]]
+  name = "Etiketler"
+  url = "/tags/"
+  weight = 30
+[[menu.main]]
+  name = "Ara"
+  url = "/search/"
+  weight = 40
+[[menu.main]]
+  name = "Hakkımda"
+  url = "/hakkimizda/"
+  weight = 50
