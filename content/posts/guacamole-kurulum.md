@@ -168,7 +168,7 @@ Artık Guacamole’ tarayıcımızdan erişebiliriz. (`localhost `yerine sunucum
 
 Uygulamaya giriş yaptıktan sonra sağ üstteki menüden `settings `altına gelerek kullanıcı, grup ve bağlantılar gibi seçenekleri yapılandırıyoruz.
 
-![](/wp-content/uploads/2025/03/image-1-1024x330.png)
+![](/images/guacamole-kurulum/guacamole-kurulum-1.png)
 
 Örnek olarak connection tabına gelerek bir sunucu ekliyorum.
 
@@ -176,13 +176,13 @@ Uygulamaya giriş yaptıktan sonra sağ üstteki menüden `settings `altına gel
 2.  Sunucumuzun ip adresi ve bağlantıyı gerçekleştireceğimiz portu belirliyoruz.
 3.  Sunucuya login olmak için gerekli olan kullanıcı bilgilerini yazıyoruz.
 
-![](/wp-content/uploads/2025/03/image-2-1024x1018.png)
+![](/images/guacamole-kurulum/guacamole-kurulum-2.png)
 
 Bağlantıyı oluşturduktan sonra sağ üstteki menüden `Home`‘a gidiyoruz ve bağlantımızı seçerek çift tıklayıp sunucuya bağlantı işlemini gerçekleştiriyoruz.
 
-![](/wp-content/uploads/2025/03/image-3-1024x231.png)
+![](/images/guacamole-kurulum/guacamole-kurulum-3.png)
 
-![](/wp-content/uploads/2025/03/image-4-1024x212.png)
+![](/images/guacamole-kurulum/guacamole-kurulum-4.png)
 
 ### Sonuç
 

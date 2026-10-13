@@ -33,39 +33,39 @@ Geçtiğimiz aylarda bir firmayı oldukça eski bir Hyper-V ortamından güncel 
 
 1- Taşınacak sunucu için bir Backup Job oluşturuyoruz ve Full Backup başlatıyoruz.
 
-![](/wp-content/uploads/2024/01/image-14.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-1.png)
 
-![](/wp-content/uploads/2024/01/image-13.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-2.png)
 
-![](/wp-content/uploads/2024/01/image-5.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-3.png)
 
 2- Full backup işlemi tamamlandıktan sonra taşıma işlemini gerçekleştireceğimiz esnada data kaybı olmaması için sunucuyu kapatıp Incremental Backup başlatıyorum.
 
 3- Backup işlemi tamamlandıktan sonra Instant Recovery işlemini başlatıyorum. Burada sunucuyu Backup diski üzerinden VMware ortamınıza deploy edecektir, isterseniz sunucuyu Power On yapabilirsiniz. Ancak sunucuyu açtığınızda Migration işlemi daha da uzayacaktır. Bu nedenle Instant Recovery tamamlandıktan sonra sağ tıklayıp Migrate to Production seçeneğini seçiyorum.
 
-![](/wp-content/uploads/2024/01/image-4.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-4.png)
 
-![](/wp-content/uploads/2024/01/image-3.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-5.png)
 
 4- Destination bölümünde Instant Recovery işlemini yapacağımız sunucumuzun ismini, taşıyacağımız hostumuzu, networkümüzü belirliyoruz. Bu aşamada networkü seçmiş olsak dahi taşıma işleminin ardından sunucumuz networkle haberleşmeyecektir. Taşıma işlemi sonrasında network kartını yeniden vmxnet3 olarak ekleyip tanıtmanız gerekiyor. (Bu durum her koşulda bir zorunluluk, mevcutta kullandığınız Hyper-V network adapter VMware ile çalışmayacağı için yeni bir adapter ekleyip config yapmak icap ediyor.)
 
-![](/wp-content/uploads/2024/01/image-1.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-6.png)
 
 5- Finish diyerek Instant Recovery işlemini başlatıyoruz. Bu aşamada yukarıda da belirttiğim gibi migration tamamlanmadan VM’i power on yapmıyorum. Aksi halde migration aşaması oldukça uzuyor.
 
-![](/wp-content/uploads/2024/01/image-8.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-7.png)
 
 6- Instant Recovery işlemini yaptıktan sonra artık sunucuyu vSphere ortamınızda görebilirsiniz. Sunucumuz şu an Veeam tarafından vSphere üzerinde çalıştırılabilir şekilde convert edildi. Ancak henüz taşıma işlemini gerçekleştirmedik.
 
-![](/wp-content/uploads/2024/01/image-9.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-8.png)
 
 7- Taşıma işlemini tamamlamak için **Migrate to Production** seçeneğini kullanıyoruz. Böylelikle Veeam Repository’imiz üzerindeki VM’imizi vSphere ortamına taşımaya başlıyoruz.
 
-![](/wp-content/uploads/2024/01/image-10.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-9.png)
 
 8- Destination bölümünde sunucumuzu migrate edeceğimiz host ve datastore’u seçiyoruz.
 
-![](/wp-content/uploads/2024/01/image-11.png)
+![](/images/hyperv-vsphere-gecis/hyperv-vsphere-gecis-10.png)
 
 9- Transfer bölümünde proxy kullanıyorsak eğer proxy sunucularımızı seçiyoruz ve finish diyerek taşıma işlemini başlatıyoruz.
 

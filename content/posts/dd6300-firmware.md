@@ -20,38 +20,38 @@ Gelelim upgrade işlemnine
 
 Öncelikle [ürünün sayfasından](https://www.dell.com/support/home/tr-tr/product-support/product/dd6300-appliance/drivers) ihtiyacımız olan paketleri download ediyoruz.
 
-![](/wp-content/uploads/2024/01/WhatsApp-Gorsel-2024-01-02-saat-19.14.23_2c0af5d0.jpg)
+![](/images/dd6300-firmware/dd6300-firmware-1.jpg)
 
 Ben ihtiyacım olan 6.2.1.110 ve 7.13.0.20 sürümlerini download ediyorum.
 
-![](/wp-content/uploads/2024/01/dd6300-0-1024x487.png)
+![](/images/dd6300-firmware/dd6300-firmware-2.png)
 
 İndirdiğimiz paketleri de web arayüzünden yüklememiz gerekiyor ancak ben bu aşamada aşağıdaki hatayı aldım.
 
-![](/wp-content/uploads/2024/01/dd6300-0-1-1024x484.png)
+![](/images/dd6300-firmware/dd6300-firmware-3.png)
 
 Bu aşamada internette çeşitli araştırmalar yaptım ancak hata ile ilgili spesifik bir çözüme ulaşamadım. [Shamistan ARZIMANLI](https://www.linkedin.com/pulse/dell-emc-data-domain-upgrade-file-upload-failed-error-arzimanli/?originalSubdomain=tr)‘nın bir yazısında aynı hatayla karşılaştığını ve alternatif olarak FTP kullandığını gördüm. Ben de aynı şekilde upgrade dosylarını FTP ile atma yolunu tercih ettim. Bu işlem için de WinSCP uygulamasını kullandım.
 
 WinSCP ile DataDomain’e **FTP** protokolü ile bağlandım. rpm dosyalarını Data Domain’in ***root/releases*** dizinine kopyaladım.
 
-![](/wp-content/uploads/2024/01/dd6300-3-1024x560.png)
+![](/images/dd6300-firmware/dd6300-firmware-4.png)
 
 Kopyalama işlemi tamamlandıktan sonra web arayüzünde Maintenance/System altında aşağıdaki gibi paketinizi görüntüleyebilirsiniz.
 
-![](/wp-content/uploads/2024/01/dd6300-4-1024x487.png)
+![](/images/dd6300-firmware/dd6300-firmware-5.png)
 
 Upgrade öncesinde dosyamızı işaretleyip UPGRADE-PRECHECK seçeneğini seçiyoruz ve paketimiz eksiksiz ve uygun olup olmadığını kontrol ediyoruz.
 
-![](/wp-content/uploads/2024/01/dd6300-6-1024x486.png)
+![](/images/dd6300-firmware/dd6300-firmware-6.png)
 
 Precheck işlemi sorunsuz bir şekilde tamamlandıktan sonra **PERFORM SYSTEM UPGRADE** butonu ile upgrade işlemine başlayabiliriz.
 
-![](/wp-content/uploads/2024/01/dd6300-7-1024x487.png)
+![](/images/dd6300-firmware/dd6300-firmware-7.png)
 
-![](/wp-content/uploads/2024/01/dd6300-8-1024x485.png)
+![](/images/dd6300-firmware/dd6300-firmware-8.png)
 
 Upgrade’in yüklenmesi hızlıca bitiyor ancak reboot işlemi yazının başında da belirttiğim gibi biraz zaman alıyor. Upgrade işlemi tamamlandığında yeni sürümümüz bizleri karşılıyor.
 
-![](/wp-content/uploads/2024/01/dd6300-9-1024x487.png)
+![](/images/dd6300-firmware/dd6300-firmware-9.png)
 
 Bir sonraki aşamada 7.13.0.20 sürüme upgrade yapıyorum. Bu işlem için de süreç aynı işliyor.

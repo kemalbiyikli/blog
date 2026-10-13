@@ -24,7 +24,7 @@ Bu izinler, üç farklı kullanıcı grubu için ayrı ayrı tanımlanır:
 
 Sembolik gösterimde, izinler harflerle **(r, w, x)** ifade edilir. İzinleri eklemek veya kaldırmak için + ve – işaretleri kullanılır.
 
-![](/wp-content/uploads/2025/02/WhatsApp-Gorsel-2025-02-28-saat-23.42.36_9cbbe11b-1024x242.jpg)
+![](/images/linux-dosya-izinleri/linux-dosya-izinleri-1.jpg)
 
 - **u+rwx            ** : Owner için **read**, **write** ve **execute** izni verir.
 - **g+r                 ** : Group için **read** izni verir.

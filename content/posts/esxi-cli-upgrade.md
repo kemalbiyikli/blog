@@ -10,11 +10,11 @@ ESXi upgrade işlemi birden fazla yöntemle yapılabilmektedir, bu yazımda cli 
 
 Bunun için aşağıdaki adımları takip etmemiz gerekmektedir. Öncelikle offline bundle paketini [customerconnect.vmware.com](http://customerconnect.vmware.com) adresinden download ediyoruz. Download ederken custom bir esxi sürümü mü standart bir esxi sürümü mü kullandığımıza dikkat etmemiz gerekiyor. Ben standart sürüm kullandığım için standart sürümü tercih ediyorum.
 
-![](/wp-content/uploads/2023/12/image.png)
+![](/images/esxi-cli-upgrade/esxi-cli-upgrade-1.png)
 
 Uygun sürümü download ettikten sonra upgrade işlemini yapacağız esxi hosta bağlı olan bir datastore’a upload ediyoruz.
 
-![](/wp-content/uploads/2023/12/image-2.png)
+![](/images/esxi-cli-upgrade/esxi-cli-upgrade-2.png)
 
 Ardından hostumuzda SSH’ı aktif ediyoruz.
 
@@ -43,7 +43,7 @@ Komutu çalıştırdıktan sonra aşağıdaki görselde gördüğümüz profil b
 esxcli software profile update -p ESXi-8.0.0-20513097-standard -d /vmfs/volumes/DATASTORE01/VMware-ESXi-8.0-20513097-depot.zip
 ```
 
-![](/wp-content/uploads/2023/12/image-3.png)
+![](/images/esxi-cli-upgrade/esxi-cli-upgrade-3.png)
 
 Yukarıda düzenlediğimiz komutu çalıştıyoruz ve upgrade işlemini gerçekleştiriyoruz. Upgrade sonrasında bizden restart isteyecektir. Hostumuzu aşağıdaki komutla maintenance modundan çıkartıp restart ederek ve upgrade işlemi tamamlıyoruz.
 
@@ -51,4 +51,4 @@ Yukarıda düzenlediğimiz komutu çalıştıyoruz ve upgrade işlemini gerçekl
 vim-cmd hostsvc/maintenance_mode_exit
 ```
 
-![](/wp-content/uploads/2023/12/image-4.png)
+![](/images/esxi-cli-upgrade/esxi-cli-upgrade-4.png)

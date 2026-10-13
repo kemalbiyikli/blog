@@ -6,7 +6,7 @@ slug: "vcenter-upgrade-source-vcenter-has-duplicate-names-in-a-network-folder-ha
 tags: ["VMware", "vCenter", "Upgrade", "Sorun Giderme"]
 draft: false
 ---
-![](/wp-content/uploads/2023/12/vcenter.jpg)
+![](/images/vcenter-duplicate-names/vcenter-duplicate-names-1.jpg)
 
 vCenter’ınızı upgrade etmek istediğinizde yukarıdaki gibi bir hatayla karşılaşıyorsanız büyük ihtimalle 6.5 öncesi bir sürümü upgrade etmeye çalışıyorsunuzdur. Bu hata vCenter üzerinde aynı isme sahip olan birden fazla Port Group’a sahip olmanızdan kaynaklanıyor.
 
