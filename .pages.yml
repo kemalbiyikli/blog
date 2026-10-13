@@ -2,6 +2,18 @@ media:
   input: static/images
   output: /images
 content:
+  - name: home
+    label: Ana Sayfa
+    type: file
+    path: config/_default/params.yaml
+    fields:
+      - name: homeInfoParams
+        label: Karşılama bölümü
+        type: object
+        fields:
+          - { name: Title, label: Başlık, type: string }
+          - { name: Content, label: Açıklama, type: text }
+      - { name: description, label: "Site açıklaması (Google sonuçlarında görünür)", type: text }
   - name: posts
     label: Yazılar
     type: collection
