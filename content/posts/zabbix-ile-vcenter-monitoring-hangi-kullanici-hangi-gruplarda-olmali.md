@@ -1,6 +1,6 @@
 ---
 title: "Zabbix ile vCenter Monitoring: Hangi Kullanıcı Hangi Gruplarda Olmalı?"
-date: "2026-07-15T00:00:00+03:00"
+date: "2026-07-15T00:00:00"
 slug: "zabbix-ile-vcenter-monitoring-hangi-kullanici-hangi-gruplarda-olmali"
 draft: true
 ---
