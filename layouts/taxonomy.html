@@ -1,0 +1,25 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  <div class="post-description">{{ len .Data.Terms }} konu · bir konuya tıklayarak o konudaki yazıları gör</div>
+</header>
+
+<ul class="topic-list">
+  {{- range .Data.Terms.ByCount }}
+  {{- $count := .Count }}
+  {{- with .Page }}
+  <li class="{{ partial "tag_color.html" .Title }}">
+    <a href="{{ .RelPermalink }}">
+      <span class="tl-dot"></span>
+      <span class="tl-main">
+        <span class="tl-name">{{ .Title }}</span>
+        <span class="tl-sub">{{ range $i, $p := first 2 .Pages }}{{ if $i }} · {{ end }}{{ $p.Title }}{{ end }}</span>
+      </span>
+      <span class="tl-count">{{ $count }}</span>
+      <span class="tl-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+  {{- end }}
+  {{- end }}
+</ul>
+{{- end }}
