@@ -1,4 +1,36 @@
 
+/* Konular sayfası: liste görünümü */
+.topic-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.topic-list li { margin: 0; }
+.topic-list a {
+  position: relative; display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px 14px 22px;
+  background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.topic-list a::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--c); }
+.topic-list a:hover {
+  transform: translateX(3px);
+  border-color: color-mix(in srgb, var(--c) 50%, var(--border));
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--c) 15%, transparent);
+}
+.tl-dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 18%, transparent); }
+.tl-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.tl-name { font-size: 17px; font-weight: 700; color: var(--primary); }
+.topic-list a:hover .tl-name { color: var(--c); }
+.tl-sub { font-size: 13px; color: var(--secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-count {
+  flex: none; min-width: 36px; padding: 4px 10px; border-radius: 999px; text-align: center;
+  font-size: 14px; font-weight: 700; color: var(--c);
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 30%, transparent);
+}
+.tl-arrow { flex: none; color: var(--secondary); transition: transform .15s, color .15s; }
+.topic-list a:hover .tl-arrow { transform: translateX(3px); color: var(--c); }
+@media (max-width: 600px) { .tl-sub { display: none; } }
+
+
 /* Karşılama kutusunda boşluk kalmasın */
 .home-info { min-height: 0; }
 .home-info .entry-content { margin-bottom: 0; }
