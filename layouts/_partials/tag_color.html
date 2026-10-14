@@ -1,0 +1,2 @@
+{{- $map := dict "VMware" "c-blue" "vCenter" "c-blue" "ESXi" "c-blue" "Linux" "c-orange" "Ubuntu" "c-orange" "LVM" "c-orange" "Redis" "c-orange" "Guacamole" "c-orange" "Storage" "c-purple" "HPE MSA" "c-purple" "iSCSI" "c-purple" "Backup" "c-green" "Veeam" "c-green" "Dell EMC" "c-green" "Data Domain" "c-green" "Sorun Giderme" "c-red" "Zabbix" "c-yellow" "Monitoring" "c-yellow" -}}
+{{- return (index $map . | default "c-cyan") -}}
