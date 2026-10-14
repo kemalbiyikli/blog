@@ -4,9 +4,13 @@
     <h1>{{ .Title | markdownify }}</h1>
   </header>
   <div class="entry-content md-content">
-    {{ $opts := dict "display" "block" }}
-    {{- /* Editörün ürettiği kelime içi kalın (**#**System) yazımlarını düzelt */}}
-    {{ .Content | replaceRE `\*\*([^*\n]+?)\*\*` "<strong>$1</strong>" | $.Page.RenderString $opts }}
+    {{- /* Editör HTML kaydeder; eski Markdown içerik de desteklenir */}}
+    {{- $c := .Content | default "" }}
+    {{- if strings.HasPrefix (strings.TrimSpace $c) "<" }}
+    {{ $c | safeHTML }}
+    {{- else }}
+    {{ $c | $.Page.RenderString (dict "display" "block") }}
+    {{- end }}
   </div>
 </article>
 {{- end -}}
