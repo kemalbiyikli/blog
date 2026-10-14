@@ -7,17 +7,5 @@
     {{ $opts := dict "display" "block" }}
     {{ .Content | $.Page.RenderString $opts }}
   </div>
-  {{- $posts := where site.RegularPages "Section" "posts" }}
-  <div class="home-stats">
-    <span><b>{{ len $posts }}</b> yazı</span>
-    <span><b>{{ len site.Taxonomies.tags }}</b> konu</span>
-  </div>
-  <div class="home-topics">
-    {{- range first 10 site.Taxonomies.tags.ByCount }}
-    {{- with .Page }}
-    <a class="topic-chip {{ partial "tag_color.html" .Title }}" href="{{ .RelPermalink }}">{{ .Title }}<small>{{ len .Pages }}</small></a>
-    {{- end }}
-    {{- end }}
-  </div>
 </article>
 {{- end -}}
