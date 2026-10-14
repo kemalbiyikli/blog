@@ -5,7 +5,8 @@
   </header>
   <div class="entry-content md-content">
     {{ $opts := dict "display" "block" }}
-    {{ .Content | $.Page.RenderString $opts }}
+    {{- /* Editörün ürettiği kelime içi kalın (**#**System) yazımlarını düzelt */}}
+    {{ .Content | replaceRE `\*\*([^*\n]+?)\*\*` "<strong>$1</strong>" | $.Page.RenderString $opts }}
   </div>
 </article>
 {{- end -}}
