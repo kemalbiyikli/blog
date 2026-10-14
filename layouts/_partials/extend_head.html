@@ -1,0 +1,16 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+{{- if .IsPage }}
+<script>
+  addEventListener('DOMContentLoaded', () => {
+    const bar = document.createElement('div');
+    bar.id = 'read-progress';
+    document.body.appendChild(bar);
+    addEventListener('scroll', () => {
+      const h = document.documentElement, p = h.scrollTop / Math.max(h.scrollHeight - h.clientHeight, 1);
+      bar.style.transform = 'scaleX(' + Math.min(Math.max(p, 0), 1) + ')';
+    }, { passive: true });
+  });
+</script>
+{{- end }}
