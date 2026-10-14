@@ -12,7 +12,7 @@ content:
         type: object
         fields:
           - { name: Title, label: Başlık, type: string }
-          - { name: Content, label: Açıklama, type: rich-text }
+          - { name: Content, label: Açıklama, type: rich-text, options: { format: html, media: false } }
       - { name: description, label: "Site açıklaması (Google sonuçlarında görünür)", type: text }
   - name: posts
     label: Yazılar
