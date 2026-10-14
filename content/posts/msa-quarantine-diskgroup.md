@@ -1,10 +1,16 @@
 ---
-title: "HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi"
-date: "2026-08-19T00:00:00"
-slug: "hpe-msade-quarantine-durumundaki-disk-groupun-silinmesi"
-tags: ["Storage", "HPE MSA", "CLI", "Sorun Giderme"]
-draft: true
+title: HPE MSA2050 Disk Quarantine - Delete Disk Group
+date: 2026-08-19T00:00:00
+draft: false
+tags:
+  - Storage
+  - HPE MSA
+  - CLI
+  - Sorun Giderme
+slug: hpe-msade-quarantine-durumundaki-disk-groupun-silinmesi
 ---
+# HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi
+
 **Önemli uyarı:** Bu işlem veri kaybına neden olur. Disk group, pool veya volume üzerindeki tüm veriler ve meta veriler silinir. Bu işlemler HPE MSA 2050 Modelinde gerçekleştirilmiştir. Storage’a eklenen ve önceden kullanılmış olan bir shelf’i yapılandırırken ortaya çıkan hata sonucunda bu yöntem izlenmiştir.
 
 Bu yöntem yalnızca gerçekten kurtarılamayan disk group’lar için uygulanmalıdır. Normal işletim sırasında pool veya disk group silmek için kullanılmamalıdır. Yanlış kullanım, geri döndürülemeyen veri kaybına ve hizmet kesintisine yol açabilir.
@@ -17,7 +23,7 @@ Bu yazıda, kurtarılamayan bir disk group’un gerekli yetkiler kullanılarak s
 
 ## 2. Sorunun Belirtileri
 
-<!-- GÖRSEL EKSİK: Quarantine durumundaki disk group ekranı (orijinal görsel Atlassian/Confluence linkiydi, WordPress'te de açılmıyordu) -->
+![](</images/HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi/HPE MSA2050-1.png>)
 
 - Disk group durumu: `QTOF`
 - Sağlık durumu: `Fault`
@@ -37,7 +43,7 @@ Aşağıdaki koşulları doğrulamadan silme işlemine başlamayın:
 
 Standart **admin** kullanıcısı diagnostic rolüne sahip değildir. Bu nedenle, gerekli komutları çalıştırabilmek için diagnostic rolü bulunan ayrı bir kullanıcı oluşturulur. Bu adım için mevcut admin kullanıcısıyla oturum açın.
 
-<!-- GÖRSEL EKSİK: Diagnostic rolüne sahip kullanıcı oluşturma komutu -->
+![](</images/HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi/HPE MSA2050-2.png>)
 
 ```text
 create user roles monitor,manage,diagnostic HPE
@@ -49,7 +55,7 @@ Komutun ardından oluşturduğunuz kullanıcıyla storage sistemine **SSH** üze
 
 Quarantine durumundaki disk group’u silebilmek için HPE’nin pool silme korumasının devre dışı bırakılması gerekir.
 
-<!-- GÖRSEL EKSİK: Pool silme erişimini etkinleştirme komutu -->
+![](</images/HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi/HPE MSA2050-3.png>)
 
 ```text
 set advanced-settings HPE-delete-pool-access enabled
@@ -61,7 +67,7 @@ set advanced-settings HPE-delete-pool-access enabled
 
 Silme yetkisi etkinleştirildikten sonra, sorunlu disk group’u **unrecoverable** olarak işaretleyin. Aşağıdaki örnekte disk group adı `dgA06` olarak verilmiştir. Bu komut, disk group’un kurtarılamaz olduğunu belirtir. Böylece controller, ilgili nesnede kurtarılabilir veri bulunmadığını değerlendirerek silme işlemine izin verir.
 
-<!-- GÖRSEL EKSİK: remove disk-groups komutu çıktısı -->
+![](</images/HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi/HPE MSA2050-4.png>)
 
 ```text
 remove disk-groups dgA06 unrecoverable
