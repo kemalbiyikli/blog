@@ -11,7 +11,7 @@ slug: hpe-msade-quarantine-durumundaki-disk-groupun-silinmesi
 ---
 # HPE MSA’de Quarantine Durumundaki Disk Group’un Silinmesi
 
-**Önemli uyarı:** Bu işlem veri kaybına neden olur. Disk group, pool veya volume üzerindeki tüm veriler ve meta veriler silinir. Bu işlemler HPE MSA 2050 Modelinde gerçekleştirilmiştir. Storage’a eklenen ve önceden kullanılmış olan bir shelf’i yapılandırırken ortaya çıkan hata sonucunda bu yöntem izlenmiştir.
+**B**u işlem veri kaybına neden olur. Disk group, pool veya volume üzerindeki tüm veriler ve meta veriler silinir. Bu işlemler HPE MSA 2050 Modelinde gerçekleştirilmiştir. Storage’a eklenen ve önceden kullanılmış olan bir shelf’i yapılandırırken ortaya çıkan hata sonucunda bu yöntem izlenmiştir.
 
 Bu yöntem yalnızca gerçekten kurtarılamayan disk group’lar için uygulanmalıdır. Normal işletim sırasında pool veya disk group silmek için kullanılmamalıdır. Yanlış kullanım, geri döndürülemeyen veri kaybına ve hizmet kesintisine yol açabilir.
 
